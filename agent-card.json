@@ -1,0 +1,19 @@
+{
+  "schema": "resident-expert-agent-card",
+  "version": "1.0",
+  "name": "Resident Expert Framework",
+  "framework_version": "1.0.0",
+  "description": "Reusable repository-resident framework for narrow read-only expert consultations over target project Context Capsules.",
+  "default_mode": "consultation",
+  "capabilities": [
+    "self-context-recovery",
+    "target-context-recovery",
+    "evidence-first-analysis",
+    "traceable-expert-report",
+    "durable-memory-isolation"
+  ],
+  "skills_root": ".agents/skills",
+  "context_entrypoint": ".context/ENTRYPOINT.md",
+  "request_schema": "schemas/consultation-request.schema.json",
+  "report_schema": "schemas/expert-report.schema.json"
+}

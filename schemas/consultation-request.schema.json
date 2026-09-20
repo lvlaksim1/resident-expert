@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/lvlaksim1/resident-expert/schemas/consultation-request.schema.json",
+  "title": "Resident Expert consultation request",
+  "type": "object",
+  "required": ["target_repository", "question"],
+  "additionalProperties": false,
+  "properties": {
+    "target_repository": {
+      "type": "string",
+      "pattern": "^[^/]+/[^/]+$"
+    },
+    "question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "target_revision": {
+      "type": "string"
+    },
+    "constraints": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "mode": {
+      "const": "consultation"
+    }
+  }
+}

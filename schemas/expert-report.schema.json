@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/lvlaksim1/resident-expert/schemas/expert-report.schema.json",
+  "title": "Resident Expert report metadata",
+  "type": "object",
+  "required": [
+    "expert",
+    "expert_version",
+    "target_repository",
+    "question",
+    "mode",
+    "skills_used",
+    "evidence_status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "expert": { "type": "string" },
+    "expert_version": { "type": "string" },
+    "target_repository": { "type": "string" },
+    "target_revision": { "type": ["string", "null"] },
+    "capsule_core_commit": { "type": ["string", "null"] },
+    "question": { "type": "string" },
+    "mode": { "const": "consultation" },
+    "skills_used": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "evidence_status": {
+      "enum": ["sufficient", "partial", "insufficient"]
+    },
+    "memory_promoted": { "type": "boolean", "default": false }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "schema": "context-capsule",
+  "version": "1.3.0",
+  "source": "lvlaksim1/context-capsule",
+  "core_commit": "79805de68723231b2f3033c75eda3053371fa872",
+  "installed_at": "2026-09-20",
+  "repository": "lvlaksim1/resident-expert",
+  "update_policy": "manual"
+}
