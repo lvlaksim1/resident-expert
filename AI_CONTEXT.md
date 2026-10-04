@@ -7,13 +7,11 @@ Authoritative durable context for this expert framework is stored in this reposi
 Target-project Context Capsules are consultation evidence only. They are never merged into this repository's durable context by default.
 
 <!-- context-capsule:begin -->
-## Context Capsule
+## Context Capsule Project Manager
 
-This repository uses Context Capsule.
+This repository carries a persistent Project Manager using Context Capsule v2.
 
-Start recovery at `.context/ENTRYPOINT.md`.
-
-The complete durable project context is stored in this repository. `.context/manifest.json` maps the project context.
+Start reinstantiation at `.context/ENTRYPOINT.md`. The repository stores manager identity, mandate, BDI-style active state, typed memory, and project context.
 
 Do not look for a central copy of project context in Context Capsule Core.
 <!-- context-capsule:end -->
