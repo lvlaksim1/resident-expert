@@ -22,10 +22,12 @@
   },
   "current_state": ".context/current/state.md",
   "rules": [
-    ".context/rules/project-rules.md"
+    ".context/rules/project-rules.md",
+    ".context/rules/batch-development-standard.md"
   ],
   "decisions": [
-    ".context/decisions/2026-09-20-resident-expert-v1.md"
+    ".context/decisions/2026-09-20-resident-expert-v1.md",
+    ".context/decisions/owner-batched-development-2026-10-30.md"
   ],
   "dialogues": [],
   "history": [],
